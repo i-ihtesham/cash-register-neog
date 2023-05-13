@@ -9,36 +9,49 @@
 </head>
 <body>
     <div class="container">
-        <h1 class="header">Cash Register</h1>
+        <h1>Cash Bill Register</h1>
         <p>Enter the bill amount and cash given by the customer and know minimum number of notes to return.</p>
-        <label for="bill-amount">Bill Amount</label>
-        <input type="text" id="bill-amount">
-        <label for="cash-given">Cash Given</label>
-        <input type="text" id="cash-given">
-        <button id="btn-check">Check</button>
-        <div id="error-message"></div>
-        <table>
-            <tr>
-                <th>No. of notes</th>
-                <td class="notes"></td>
-                <td class="notes"></td>
-                <td class="notes"></td>
-                <td class="notes"></td>
-                <td class="notes"></td>
-                <td class="notes"></td>
-                <td class="notes"></td>
-            </tr>
-            <tr>
-                <th>Note</th>
-                <td>2000</td>
-                <td>500</td>
-                <td>100</td>
-                <td>20</td>
-                <td>10</td>
-                <td>5</td>
-                <td>1</td>
-            </tr>
-        </table>
+        <div class="bill">
+            <div class="label">Enter the bill amount:</div>
+            <input type="number" id="bill-amt">
+            <button id="next">Next</button>
+        </div>
+        <div class="cash">
+            <div class="label">Enter the cash given:</div>
+            <input type="number" id="cash-amt">
+            <button id="retrn">Return Change</button>
+        </div>
+        <div class="error"></div>
+
+        <div class="output">
+            <table>
+                <tr>
+                    <th>Note</th>
+                    <td>2000</td>
+                    <td>500</td>
+                    <td>100</td>
+                    <td>50</td>
+                    <td>20</td>
+                    <td>10</td>
+                    <td>5</td>
+                    <td>2</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <th>No. of Notes</th>
+                    <td class="noofNotes"></td>
+                    <td class="noofNotes"></td>
+                    <td class="noofNotes"></td>
+                    <td class="noofNotes"></td>
+                    <td class="noofNotes"></td>
+                    <td class="noofNotes"></td>
+                    <td class="noofNotes"></td>
+                    <td class="noofNotes"></td>
+                    <td class="noofNotes"></td>
+                </tr>
+            </table>
+        </div>
+
     </div>
 </body>
 <script src="app.js"></script>

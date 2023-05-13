@@ -1,7 +1,69 @@
 *{
-
+    box-sizing: border-box;
 }
-
+:root{
+    --primary-color : #E27D60;
+    --secondary-color : #85C7F2;
+    --text-color : #333;
+    --heading-color: #555;
+    --button-hover-color: #F7EDE2;
+}
 .container{
-    
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    border: 2px solid green;
+    max-width: 700px;
+    background-color: aliceblue;
 }
+
+input{
+    border: 1px solid red;
+    padding: 1.1rem;
+    display: block;
+    width: 90%;
+    margin: auto;
+    font-size: 1rem;
+}
+
+button{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    color: #fff;
+    font-size: 1rem;
+}
+#next,#retrn{
+    cursor: pointer;
+}
+button:hover{
+    border-radius: 1rem;
+}
+.error{
+    padding-top: 1rem;
+    color: red;
+    font-size: 1.1rem;
+}
+.output{
+    margin: 1.1rem 0;
+}
+table{
+    margin: auto;
+    width: 90%;
+    padding: 0.2rem;
+    table-layout: fixed;
+}
+.output table, th, td{
+    padding: 0.2rem;
+    border: 2px solid black ;
+    border-collapse: collapse;
+}
+h1,p,.label{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+
